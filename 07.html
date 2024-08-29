@@ -18,9 +18,9 @@
     //PROCESSAMENTO
     if (valor >= 10 && valor <=600) {
         const centena = Math.floor(valor / 100);
-        const dezena = Math.floor((valor - (centena * 100)) / 10);
-        const unidade = Math.floor(valor - ((centena * 100) + (dezena * 10)));
-
+        const dezena = Math.floor(valor - (centena * 100));
+        const unidade = Math.floor(valor - (centena * 100) + (dezena));
+        alert()
     }
     //SAÍDA
 
