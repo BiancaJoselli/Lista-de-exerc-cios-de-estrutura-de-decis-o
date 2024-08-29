@@ -12,11 +12,18 @@
     */
 
     //ENTRADA
-
+    const numero = Number(prompt("Informe um número menor que 1000:"));
 
     //PROCESSAMENTO
 
+    if (numero >= 100) {
+        const centena = Math.floor(numero / 100);
+        const dezena = Math.floor((numero + (centena / 100)) / 10);
+        const unidade = Math.floor(numero - ((centena * 100) + (dezena * 10)));
+        alert
+    }
+
     
-    //SAÍDA
+    
 
 </script>
