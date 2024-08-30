@@ -30,7 +30,7 @@
         const desconto = (6.1 * 5) / 100;
         const valorPago = (6.1 - desconto);
         const valorFinal =  litros * valorPago;
-        alert(`o valor a ser pago pelo cliente é R$${valorFinal}`);
+        alert(`o valor a ser pago pelo cliente é R$${valorFinal.toFixed(2).replace(".",",")}`);
 
     } else if (tipoCombustivel === "G" && litros <= 20 ) {
         const desconto = (6.5 * 4) / 100;
@@ -41,9 +41,9 @@
         const desconto = (6.5 * 6) / 100;
         const valorPago = (6.5 - desconto);
         const valorFinal =  litros * valorPago;
-        alert(`o valor a ser pago pelo cliente é R$${valorFinal}`);
+        alert(`o valor a ser pago pelo cliente é R$${valorFinal.toFixed(2).replace(".",",")}`);
     } else {
-        alert(`inválido`);
+        alert(`inválido!`);
     }
 
     
