@@ -10,11 +10,35 @@
     */
 
     //ENTRADA
-    const preco = Number(prompt("Informe o preço do produto:"));
+
+    const precoProduto =Number(prompt("Informe original do produto:"));
     
     //PROCESSAMENTO
+    if ( precoProduto <= 280) {
 
-    
+        const porcentagem = precoProduto * 0.2;
+        const aumento = precoProduto + porcentagem;
+        alert(`O valor com o aumento é: R$${aumento}`);
+
+    } else if (precoProduto <= 700) {
+        const porcentagem = precoProduto * 0.15 ;
+        const aumento = precoProduto + porcentagem;
+        alert(`O valor com o aumento é: R$${aumento}`);
+
+    } else if (precoProduto <= 1500) {
+        const porcentagem = precoProduto * 0.10 ;
+        const aumento = precoProduto + porcentagem;
+        alert(`O valor com o aumento é: R$${aumento}`);
+
+    } else if (precoProduto > 1500) {
+        const porcentagem = precoProduto * 0.05 ;
+        const aumento = precoProduto + porcentagem;
+        alert(`O valor com o aumento é: R$${aumento}`);
+
+    } else {
+        alert(`Valor inválido`);
+    }
+
     //SAÍDA
 
 </script>
