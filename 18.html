@@ -6,6 +6,7 @@
     */
 
     //ENTRADA
+
     const hemisferio = prompt("Informe o hemisfério que você está: Norte ou Sul");
     const mesAtual = Number(prompt("Informe o mês que você está: 1; 2; 3..."));
 
@@ -14,35 +15,38 @@
 
     if (mesAtual < 1 || mesAtual > 12) {
         alert(`Inválido!`);
+
     } else if (hemisferio === "Norte" || hemisferio === "norte") {
-        if (mesAtual >= 3 && mesAtual <= 5);
-        alert(`É primavera`);
+        if (mesAtual >= 3 && mesAtual <= 5) {
+            alert(`É primavera`);
 
-    } else if (mesAtual >= 6 && mesAtual <= 8) {
-        alert(`É verão`);
+        } else if (mesAtual >= 6 && mesAtual <= 8) {
+            alert(`É verão`);
 
-    } else if (mesAtual >= 9 && mesAtual <= 11) {
-        alert(`É outono`);
+        } else if (mesAtual >= 9 && mesAtual <= 11) {
+            alert(`É outono`);
 
-    } else {
-        alert(`É inverno`);
+        } else {
+            alert(`É inverno`);
 
-    }
+        }
+    };
 
     if (hemisferio === "Sul" || hemisferio === "sul") {
-        if (mesAtual >= 3 && mesAtual <= 5);
-        alert(`É outono`);
+        if (mesAtual >= 3 && mesAtual <= 5) {
+            alert(`É outono`);
 
-    } else if (mesAtual >= 6 && mesAtual <= 8) {
-        alert(`É inverno`);
+        } else if (mesAtual >= 6 && mesAtual <= 8) {
+            alert(`É inverno`);
 
-    } else if (mesAtual >= 9 && mesAtual <= 11) {
-        alert(`É primavera`);
+        } else if (mesAtual >= 9 && mesAtual <= 11) {
+            alert(`É primavera`);
 
-    } else {
-        alert(`É inverno`);
+        } else {
+            alert(`É inverno`);
+        }
 
-    }
+    };
 
 
 

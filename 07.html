@@ -13,9 +13,11 @@
     */
 
     //ENTRADA
+
     const valor = Number(prompt("Informe o valor do saque:"));
 
     // PROCESSAMENTO
+
     if (valor >= 10 && valor <= 600) {
 
         const notas100 = Math.floor(valor / 100);
@@ -33,6 +35,7 @@
         const notas1 = valorRestanteDepois5;
 
         // SAÍDA
+
         alert(`As notas fornecidas são:
     ${notas100} de 100 reais;
     ${notas50} de 50 reais;
@@ -42,7 +45,7 @@
 
     } else {
         alert("Você informou um valor inválido.");
-    }
+    };
 
 
     //SAÍDA

@@ -9,18 +9,21 @@
     */
 
     //ENTRADA
-    const notaSemAjuda = Number(prompt("Informe sua nota antes de receber ajuda:"));
-    const notaComAjuda = Number(prompt("Informe sua nota depois de receber ajuda:"));
+
+    const notaSemAjuda = Number(prompt("Informe a nota do little brother antes de receber ajuda:"));
+    const notaComAjuda = Number(prompt("Informe a nota do little brother depois de receber ajuda:"));
     
     //PROCESSAMENTO
+
     let acrescimo = (notaComAjuda - notaSemAjuda) / 4;
     
     //SAÍDA
+
     if (acrescimo > 0) {
         alert(`O acrescimo na sua nota: ${acrescimo.toFixed(2).replace(".",",")}`);
 
     } else {
         alert(`Você não possui acréscimo`);
-    }
+    };
 
 </script>

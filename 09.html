@@ -10,8 +10,72 @@
     */
 
     //ENTRADA
-  
 
-    //SAÍDA
+    const numero1 = Number(prompt("Informe um número:"));
+    const numero2 = Number(prompt("Informe outro número:"));
+    const operacao = prompt("Informe a operação que deseja usar: Adição (+); Subtração (-); Multiplicação (x); Divisão (/)");
 
+    //PROCESSAMENTO 
+
+    let resultado = null;
+
+    if (operacao === "+") {
+        resultado = numero1 + numero2;
+
+    } else if (operacao === "-") {
+        resultado = numero1 - numero2;
+
+    } else if (operacao === "x") {
+        resultado = numero1 * numero2;
+
+    } else if (operacao === "/") {
+        if (numero2 === 0) {
+            alert(`Não é possivel dividir por 0`);
+            resultado = null;
+
+        } else {
+            resultado = numero1 / numero2;
+
+        }
+
+    } else {
+        alert(`Número inválido!`);
+        resultado = null;
+    };
+
+
+
+    if (resultado !== null) {
+        let tipoNumero = '';
+
+
+        if (resultado % 2 === 0) {
+            tipoNumero += ' par';
+
+        } else {
+            tipoNumero += 'impar';
+
+        }
+
+        if (resultado >= 0) {
+            tipoNumero += '; positivo';
+
+
+        } else {
+            tipoNumero += '; negativo';
+
+        }
+
+        if (resultado % 1 === 0) {
+            tipoNumero += '; inteiro.';
+
+        } else {
+            tipoNumero += '; decimal.';
+        }
+
+        //SAÍDA
+        
+        alert(`O resultado da operação é ${resultado.toFixed(2).replace(".", ",")}
+    Ele é: ${tipoNumero}`);
+    };
 </script>
