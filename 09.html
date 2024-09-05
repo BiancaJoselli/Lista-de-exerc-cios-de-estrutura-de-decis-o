@@ -19,16 +19,16 @@
 
     let resultado = null;
 
-    if (operacao === "+") {
+    if (operacao == "+") {
         resultado = numero1 + numero2;
 
-    } else if (operacao === "-") {
+    } else if (operacao == "-") {
         resultado = numero1 - numero2;
 
-    } else if (operacao === "x") {
+    } else if (operacao == "x") {
         resultado = numero1 * numero2;
 
-    } else if (operacao === "/") {
+    } else if (operacao == "/") {
         if (numero2 === 0) {
             alert(`Não é possivel dividir por 0`);
             resultado = null;
@@ -45,11 +45,11 @@
 
 
 
-    if (resultado !== null) {
+    if (resultado != null) {
         let tipoNumero = '';
 
 
-        if (resultado % 2 === 0) {
+        if (resultado % 2 == 0) {
             tipoNumero += ' par';
 
         } else {
@@ -66,7 +66,7 @@
 
         }
 
-        if (resultado % 1 === 0) {
+        if (resultado % 1 == 0) {
             tipoNumero += '; inteiro.';
 
         } else {
