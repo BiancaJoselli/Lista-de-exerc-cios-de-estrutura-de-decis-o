@@ -16,7 +16,7 @@
     const local =prompt("Você esteve no local do crime? Responda: Sim ou Não");
     const moraPerto =prompt("Você mora perto da vítima? Responda: Sim ou Não");
     const deviaParaVitima =prompt("Você devia para a vítima? Responda: Sim ou Não");
-    const trabalhoComVitima =prompt("Você já trabalhou com a vítima? Responda: Sim ou Não");
+    const trabalhouComVitima =prompt("Você já trabalhou com a vítima? Responda: Sim ou Não");
     
     //PROCESSAMENTO
 
@@ -24,14 +24,59 @@
 
     switch (telefone) {
         case "Sim":
-            sim = sim + 1;
-        break
+            sim ++
+        break;
 
     }
     switch (local) {
-        
+        case "Sim":
+            sim ++
+        break; 
+
     }
 
+    switch (moraPerto) {
+        case "Sim":
+            sim ++
+        break;
+
+    }
+
+    switch (deviaParaVitima) {
+        case "Sim":
+            sim ++
+        break;
+
+    }  switch (trabalhouComVitima) {
+        case "Sim":
+            sim ++
+        break;
+
+    }
+
+    switch (sim) {
+        case 2:
+        alert(`Suspeita!`)
+        break;
+
+        case 3:
+            alert(`Cúmplise`)
+        break;
+
+        case 4:
+            alert(`Cúmplise`)
+        break;
+
+        case 5: 
+            alert(`ASSASSINO!`)
+        break;
+
+        default:
+            alert(`Inocente`)
+        break;
+
+    }
+        
 
     //SAÍDA
 
