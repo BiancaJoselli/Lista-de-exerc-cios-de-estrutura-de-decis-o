@@ -12,43 +12,43 @@
     */
 
     //ENTRADA
-    const telefone =prompt("Você telefonou para a vítima? Responda: Sim ou Não");
-    const local =prompt("Você esteve no local do crime? Responda: Sim ou Não");
-    const moraPerto =prompt("Você mora perto da vítima? Responda: Sim ou Não");
-    const deviaParaVitima =prompt("Você devia para a vítima? Responda: Sim ou Não");
-    const trabalhouComVitima =prompt("Você já trabalhou com a vítima? Responda: Sim ou Não");
+    const telefone = prompt("Você telefonou para a vítima? Responda: Sim ou Não").toLocaleLowerCase();
+    const local = prompt("Você esteve no local do crime? Responda: Sim ou Não").toLocaleLowerCase();
+    const moraPerto = prompt("Você mora perto da vítima? Responda: Sim ou Não").toLocaleLowerCase();
+    const deviaParaVitima = prompt("Você devia para a vítima? Responda: Sim ou Não").toLocaleLowerCase();
+    const trabalhouComVitima = prompt("Você já trabalhou com a vítima? Responda: Sim ou Não").toLocaleLowerCase();
     
     //PROCESSAMENTO
 
     let sim = 0
 
     switch (telefone) {
-        case "Sim":
+        case "sim":
             sim ++
         break;
 
     }
     switch (local) {
-        case "Sim":
+        case "sim":
             sim ++
         break; 
 
     }
 
     switch (moraPerto) {
-        case "Sim":
+        case "sim":
             sim ++
         break;
 
     }
 
     switch (deviaParaVitima) {
-        case "Sim":
+        case "sim":
             sim ++
         break;
 
     }  switch (trabalhouComVitima) {
-        case "Sim":
+        case "sim":
             sim ++
         break;
 
@@ -59,19 +59,19 @@
         alert(`Suspeita!`)
         break;
 
-        case 3:
+        case  3:
             alert(`Cúmplise`)
         break;
 
-        case 4:
+        case  4:
             alert(`Cúmplise`)
         break;
 
-        case 5: 
+        case  5: 
             alert(`ASSASSINO!`)
         break;
 
-        default:
+        default: 
             alert(`Inocente`)
         break;
 

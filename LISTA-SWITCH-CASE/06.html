@@ -11,10 +11,30 @@
 
     // ENTRADA
 
-    
-    // PROCESSAMENTO
+    const idadeHumana = Number(prompt("Informe a idade do seu cachorro em anos humanos:"));
+    const porte = prompt("Informe o porte do seu cachorro: pequeno; médio; grande").toLocaleLowerCase();
 
-    
+
     // SAÍDA
+
+    switch (porte) {
+        case "pequeno": 
+            alert(`${idadeHumana * 5} amos`);
+            break;
+
+        case "médio":
+            alert(`${idadeHumana * 6} anos`);
+            break;
+
+        case "grande":
+            alert(`${idadeHumana * 7} anos`);
+            break;
+
+        default:
+            alert(`Inválido`);
+            break;
+
+    }
+
 
 </script>
