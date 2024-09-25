@@ -26,30 +26,30 @@
     let classificacao = 0;
 
 
-    if ( telefone === "Sim" || telefone === "sim") {
+    if ( telefone == "Sim" || telefone == "sim") {
         classificacao++;
 
-    } if ( local === "Sim" || local ==="sim") {
+    } if ( local == "Sim" || local =="sim") {
         classificacao++;
 
-    } if ( moraPerto === "Sim" || moraPerto === "sim") {
+    } if ( moraPerto == "Sim" || moraPerto == "sim") {
         classificacao++;
 
-    } if ( deviaParaVitima === "Sim" || deviaParaVitima === "sim") {
+    } if ( deviaParaVitima == "Sim" || deviaParaVitima == "sim") {
         classificacao++;
 
-    } if ( trabalhoComVitima === "Sim" || trabalhoComVitima ==="sim") {
+    } if ( trabalhoComVitima == "Sim" || trabalhoComVitima =="sim") {
         classificacao++;
 
     };
 
-    if ( classificacao === 2) {
+    if ( classificacao == 2) {
         alert(`Suspeito!`);
 
-    } else if ((classificacao === 3) || (classificacao === 4)) {
+    } else if ((classificacao == 3) || (classificacao == 4)) {
         alert(`Cúmplice!`);
 
-    } else if (classificacao === 5) {
+    } else if (classificacao == 5) {
         alert(`Assassino!!`);
 
     } else {
