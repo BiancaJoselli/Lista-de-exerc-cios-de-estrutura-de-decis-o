@@ -23,27 +23,27 @@
     switch (operacao) {
         case "+":
             resultado = numero1 + numero2;
-            document.write(`O resultado é: ${resultado} `);
+            alert(`O resultado é: ${resultado} `);
             break
 
         case "-":
             resultado = numero1 - numero2;
-            document.write(`O resultado é: ${resultado} `);
+            alert(`O resultado é: ${resultado} `);
             break
 
         case "x":
             resultado = numero1 * numero2;
-            document.write(`O resultado é: ${resultado} `);
+            alert(`O resultado é: ${resultado} `);
             break
 
         case "/":
             if (numero2 == 0) {
-                document.write(`Não é possivel dividir por 0 `);
+                alert(`Não é possivel dividir por 0 `);
                 resultado = 0;
 
             } else {
                 resultado = numero1 / numero2;
-                document.write(`O resultado é: ${resultado} `);
+                alert(`O resultado é: ${resultado} `);
             }
 
     }
@@ -53,7 +53,7 @@
         tipoNumero = '';
 
 
-        if (resultado % 2 == 0) { 
+        if (resultado % 2 == 0) {
             tipoNumero += ' par';
 
         } else {
@@ -77,9 +77,9 @@
             tipoNumero += '; decimal.';
         }
     }
-    
+
 
     //SAÍDA
-    
+
     document.write(`. Ele é: ${tipoNumero}.`);
 </script>

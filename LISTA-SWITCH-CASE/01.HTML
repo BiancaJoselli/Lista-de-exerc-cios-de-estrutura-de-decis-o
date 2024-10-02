@@ -14,25 +14,24 @@
 
     //ENTRADA
 
-    const turno = prompt("Informe o turno que você estuda: M-matutino ou V-Vespertino ou N-Noturno");
+    const turno = prompt("Informe o turno que você estuda: M-matutino ou V-Vespertino ou N-Noturno").toUpperCase();
     
     //SAÍDA
 
 
     switch ( turno ) {
         case "M":
-            document.write(`Bom Dia!`);
+            alert(`Bom Dia!`);
         break
 
         case "V":
-            document.write(`Boa tarde`);
+            alert(`Boa tarde`);
         break 
 
         default:
-            document.write(`Boa noite`);
+            alert(`Boa noite`);
         break
     };
     
-    //SAÍDA
 
 </script>
