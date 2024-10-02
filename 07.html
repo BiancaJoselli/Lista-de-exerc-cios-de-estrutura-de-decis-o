@@ -21,7 +21,7 @@
     if (valor >= 10 && valor <= 600) {
 
         const notas100 = Math.floor(valor / 100);
-        const valorRestanteDepois100 = valor % 100;
+        const valorRestanteDepois100 = valor % 100 // == 0;
 
         const notas50 = Math.floor(valorRestanteDepois100 / 50);
         const valorRestanteDepois50 = valorRestanteDepois100 % 50;

@@ -7,7 +7,7 @@
 
     //ENTRADA
 
-    const hemisferio = prompt("Informe o hemisfério que você está: Norte ou Sul");
+    const hemisferio = prompt("Informe o hemisfério que você está: Norte ou Sul").toUpperCase();
     const mesAtual = Number(prompt("Informe o mês que você está: 1; 2; 3..."));
 
 
@@ -16,7 +16,7 @@
     if (mesAtual < 1 || mesAtual > 12) {
         alert(`Inválido!`);
 
-    } else if (hemisferio == "Norte" || hemisferio == "norte") {
+    } else if (hemisferio == "Norte") {
         if (mesAtual >= 3 && mesAtual <= 5) {
             alert(`É primavera`);
 
@@ -32,7 +32,7 @@
         }
     };
 
-    if (hemisferio == "Sul" || hemisferio == "sul") {
+    if (hemisferio == "Sul") {
         if (mesAtual >= 3 && mesAtual <= 5) {
             alert(`É outono`);
 

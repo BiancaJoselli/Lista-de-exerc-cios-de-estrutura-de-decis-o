@@ -12,11 +12,11 @@
     */
 
     //ENTRADA
-    const telefone = prompt("Você telefonou para a vítima? Responda: Sim ou Não").toLocaleLowerCase();
-    const local = prompt("Você esteve no local do crime? Responda: Sim ou Não").toLocaleLowerCase();
-    const moraPerto = prompt("Você mora perto da vítima? Responda: Sim ou Não").toLocaleLowerCase();
-    const deviaParaVitima = prompt("Você devia para a vítima? Responda: Sim ou Não").toLocaleLowerCase();
-    const trabalhouComVitima = prompt("Você já trabalhou com a vítima? Responda: Sim ou Não").toLocaleLowerCase();
+    const telefone = prompt("Você telefonou para a vítima? Responda: Sim ou Não").toLowercase();
+    const local = prompt("Você esteve no local do crime? Responda: Sim ou Não").toLowerCase();
+    const moraPerto = prompt("Você mora perto da vítima? Responda: Sim ou Não").toLowercase();
+    const deviaParaVitima = prompt("Você devia para a vítima? Responda: Sim ou Não").toLowercase();
+    const trabalhouComVitima = prompt("Você já trabalhou com a vítima? Responda: Sim ou Não").toLowercase();
     
     //PROCESSAMENTO
 
@@ -52,7 +52,7 @@
             sim ++
         break;
 
-    }
+    };
 
         //SAÍDA
 
@@ -77,7 +77,7 @@
             alert(`Inocente`)
         break;
 
-    }
+    };
         
 
 
