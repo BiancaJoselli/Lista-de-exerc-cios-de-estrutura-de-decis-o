@@ -11,11 +11,14 @@
     
     //SAÍDA
 
-    if ((ano % 4 == 0 && ano % 100 != 0) || ano % 400 == 0) {
+    if ((ano % 4 === 0) && (ano % 1000 != 0) || ano % 400 == 0) {
         alert(`O ano é bissexto!`);
 
-    } else { 
+    } else if (isNaN(ano) != true) {
         alert(`O ano não é bissexto!`);
+        
+    } else {
+        alert(`Valor inválido!`);
     };
 
 </script>

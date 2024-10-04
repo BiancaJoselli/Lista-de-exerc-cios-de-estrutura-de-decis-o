@@ -14,11 +14,11 @@
     */
 
     //ENTRADA
-    const telefone =prompt("Você telefonou para a vítima? Responda: Sim ou Não").toUpperCase();
-    const local =prompt("Você esteve no local do crime? Responda: Sim ou Não").toUpperCase();
-    const moraPerto =prompt("Você mora perto da vítima? Responda: Sim ou Não").toUpperCase();
-    const deviaParaVitima =prompt("Você devia para a vítima? Responda: Sim ou Não").toUpperCase();
-    const trabalhoComVitima =prompt("Você já trabalhou com a vítima? Responda: Sim ou Não").toUpperCase();
+    const telefone =prompt("Você telefonou para a vítima? Responda: Sim ou Não").toLowerCase();
+    const local =prompt("Você esteve no local do crime? Responda: Sim ou Não").toLowerCase();
+    const moraPerto =prompt("Você mora perto da vítima? Responda: Sim ou Não").toLowerCase();
+    const deviaParaVitima =prompt("Você devia para a vítima? Responda: Sim ou Não").toLowerCase();
+    const trabalhoComVitima =prompt("Você já trabalhou com a vítima? Responda: Sim ou Não").toLowerCase();
 
 
     //SAÍDA
@@ -26,19 +26,19 @@
     let classificacao = 0;
 
 
-    if ( telefone == "Sim") {
+    if ( telefone == "sim") {
         classificacao++;
 
-    } if ( local == "Sim") {
+    } if ( local == "sim") {
         classificacao++;
 
-    } if ( moraPerto == "Sim") {
+    } if ( moraPerto == "sim") {
         classificacao++;
 
-    } if ( deviaParaVitima == "Sim") {
+    } if ( deviaParaVitima == "sim") {
         classificacao++;
 
-    } if ( trabalhoComVitima == "Sim") {
+    } if ( trabalhoComVitima == "sim") {
         classificacao++;
 
     };

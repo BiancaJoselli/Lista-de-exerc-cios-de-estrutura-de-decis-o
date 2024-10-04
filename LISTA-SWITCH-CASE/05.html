@@ -12,11 +12,11 @@
     */
 
     //ENTRADA
-    const telefone = prompt("Você telefonou para a vítima? Responda: Sim ou Não").toLowercase();
+    const telefone = prompt("Você telefonou para a vítima? Responda: Sim ou Não").toLowerCase();
     const local = prompt("Você esteve no local do crime? Responda: Sim ou Não").toLowerCase();
-    const moraPerto = prompt("Você mora perto da vítima? Responda: Sim ou Não").toLowercase();
-    const deviaParaVitima = prompt("Você devia para a vítima? Responda: Sim ou Não").toLowercase();
-    const trabalhouComVitima = prompt("Você já trabalhou com a vítima? Responda: Sim ou Não").toLowercase();
+    const moraPerto = prompt("Você mora perto da vítima? Responda: Sim ou Não").toLowerCase();
+    const deviaParaVitima = prompt("Você devia para a vítima? Responda: Sim ou Não").toLowerCase();
+    const trabalhouComVitima = prompt("Você já trabalhou com a vítima? Responda: Sim ou Não").toLowerCase();
     
     //PROCESSAMENTO
 
@@ -24,60 +24,57 @@
 
     switch (telefone) {
         case "sim":
-            sim ++
+            sim ++;
         break;
 
     }
     switch (local) {
         case "sim":
-            sim ++
+            sim ++;
         break; 
 
     }
 
     switch (moraPerto) {
         case "sim":
-            sim ++
+            sim ++;
         break;
 
     }
 
     switch (deviaParaVitima) {
         case "sim":
-            sim ++
+            sim ++;
         break;
 
     }  switch (trabalhouComVitima) {
         case "sim":
-            sim ++
+            sim ++;
         break;
 
-    };
+    }
 
         //SAÍDA
 
     switch (sim) {
         case 2:
-        alert(`Suspeita!`)
+        alert(`Suspeita!`);
         break;
 
         case  3:
-            alert(`Cúmplise`)
-        break;
-
         case  4:
-            alert(`Cúmplise`)
+            alert(`Cúmplice`);
         break;
 
         case  5: 
-            alert(`ASSASSINO!`)
+            alert(`ASSASSINO!`);
         break;
 
         default: 
-            alert(`Inocente`)
+            alert(`Inocente`);
         break;
 
-    };
+    }
         
 
 

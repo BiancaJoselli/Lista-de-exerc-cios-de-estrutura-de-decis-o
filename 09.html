@@ -17,7 +17,7 @@
 
     //PROCESSAMENTO 
 
-    let resultado = null;
+    let resultado = 0;
 
     if (operacao == "+") {
         resultado = numero1 + numero2;
@@ -30,8 +30,8 @@
 
     } else if (operacao == "/") {
         if (numero2 === 0) {
-            alert(`Não é possivel dividir por 0`);
-            resultado = null;
+            alert(`Não é possível dividir por 0`);
+            resultado = 0;
 
         } else {
             resultado = numero1 / numero2;
@@ -39,20 +39,20 @@
         }
     } else {
         alert(`Número inválido!`);
-        resultado = null;
+        resultado = 0;
     };
 
 
 
-    if (resultado != null) {
+    if (resultado != 0) {
         let tipoNumero = '';
 
 
         if (resultado % 2 == 0) {
-            tipoNumero += ' par';
+            tipoNumero += 'Par';
 
         } else {
-            tipoNumero += 'impar';
+            tipoNumero += 'Ímpar';
 
         }
 

@@ -21,7 +21,7 @@
     if (valor >= 10 && valor <= 600) {
 
         const notas100 = Math.floor(valor / 100);
-        const valorRestanteDepois100 = valor % 100 // == 0;
+        const valorRestanteDepois100 = valor % 100;
 
         const notas50 = Math.floor(valorRestanteDepois100 / 50);
         const valorRestanteDepois50 = valorRestanteDepois100 % 50;
@@ -44,11 +44,9 @@
     ${notas1} de 1 real`);
 
     } else {
-        alert("Você informou um valor inválido.");
+        alert("Você informou um valor inválido!");
     };
 
-
-    //SAÍDA
 
 
 
